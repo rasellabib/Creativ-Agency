@@ -31,6 +31,7 @@
   .section-padding
   {
     padding:  135px 0;
+    overflow: hidden;
   }
 
 
@@ -366,13 +367,19 @@
   
   /*==================== Extra Small Devices (under 480px)==================*/
   @media (max-width: 480px) {
+    .section-padding
+    {
+      padding:  100px 0;
+      overflow: hidden;
+    }
     .hero-content h1 {
       font-size: 1.8rem;
     }
   
-    .btn {
-      font-size: 0.8rem;
-      padding: 8px 16px;
+    .h2{
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: 400;
     }
   
     .customers img {

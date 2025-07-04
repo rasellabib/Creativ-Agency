@@ -89,7 +89,7 @@ gsap.from( "#who",{
         scroller: "body",
         start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
 })
 
@@ -100,9 +100,9 @@ gsap.from( "#text1",{
     scrollTrigger: {
         trigger: "#page3",
         scroller: "body",
-        start: "top 80%",
+        start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
 })
 
@@ -116,7 +116,7 @@ gsap.from( "#content",{
         scroller: "body",
         start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
 })
 
@@ -127,9 +127,9 @@ gsap.from( "#content1",{
     scrollTrigger: {
         trigger: "#page3",
         scroller: "body",
-        start: "top 80%",
+        start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
 })
 
@@ -142,9 +142,9 @@ gsap.from( "#div1",{
     scrollTrigger: {
         trigger: "#page3",
         scroller: "body",
-        start: "top 80%",
+        start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
 })
 
@@ -156,9 +156,9 @@ gsap.from( "#div2",{
     scrollTrigger: {
         trigger: "#page3",
         scroller: "body",
-        start: "top 80%",
+        start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
 })
 
@@ -170,9 +170,9 @@ gsap.from( "#div3",{
     scrollTrigger: {
         trigger: "#page3",
         scroller: "body",
-        start: "top 80%",
+        start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
 })
 
@@ -184,9 +184,9 @@ gsap.from( "#div4",{
     scrollTrigger: {
         trigger: "#page3",
         scroller: "body",
-        start: "top 80%",
+        start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
 })
 
@@ -201,7 +201,7 @@ gsap.from( "#images",{
         scroller: "body",
         start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
 })
 
@@ -223,7 +223,7 @@ gsap.to(".scramble1", {
         scroller: "body",
         start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
 });
 
@@ -242,7 +242,7 @@ gsap.to(".scramble2", {
         scroller: "body",
         start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
   });
   gsap.to(".scramble3", {
@@ -260,7 +260,7 @@ gsap.to(".scramble2", {
         scroller: "body",
         start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
   });
   gsap.to(".scramble4", {
@@ -278,7 +278,7 @@ gsap.to(".scramble2", {
         scroller: "body",
         start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
   });
   gsap.to(".scramble5", {
@@ -296,7 +296,7 @@ gsap.to(".scramble2", {
         scroller: "body",
         start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
   });
   gsap.to(".scramble6", {
@@ -314,7 +314,7 @@ gsap.to(".scramble2", {
         scroller: "body",
         start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
   });
   gsap.to(".scramble7", {
@@ -332,7 +332,7 @@ gsap.to(".scramble2", {
         scroller: "body",
         start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
   });
   gsap.to(".scramble8", {
@@ -350,6 +350,6 @@ gsap.to(".scramble2", {
         scroller: "body",
         start: "top 60%",
         toggleActions: "play none none reverse",
-        markers:true,
+        // markers:true,
     }
   });
