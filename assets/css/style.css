@@ -11,13 +11,17 @@
 
   .bg-image{
     background: url('../images/hero/image1.png') no-repeat center center/cover;
-    padding: 0 100px;
   }
 
   /* Extra Custom Classes from Inline Tailwind (converted) */
   .h2{
     font-size: 60px;
     line-height: 60px;
+    font-weight: 400;
+  }
+  p{
+    font-size: 14px;
+    line-height: 20px;
     font-weight: 400;
   }
   .hero-padding{
@@ -28,6 +32,7 @@
   {
     padding:  135px 0;
   }
+
 
 
 .navbar {
@@ -349,7 +354,13 @@
   
   /* ================Mobile View (Small Devices: under 768px) ==========================*/
   @media (max-width: 767px) {
-
+    .Wheel{
+      width: 50px ;
+      height: 50px;
+    }
+    .hero-padding{
+      padding:  135px 10px;
+    }
 
   }
   
