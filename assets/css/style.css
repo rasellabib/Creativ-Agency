@@ -132,22 +132,6 @@
     max-width: 600px;
   }
   
-  .btn {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 12px 24px;
-    background: #fff;
-    color: #000;
-    border-radius: 30px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background 0.3s;
-  }
-  
-  .btn:hover {
-    background: #ddd;
-  }
-  
   .customers {
     display: flex;
     align-items: center;
@@ -307,10 +291,18 @@
     transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
     align-content: center;
   }
+  .leftIcon{
+    width: 40px;
+  }
+  .Page3{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
 /* ============Tablet View (Medium Devices: 768px to 1024px)================= */
 @media (max-width: 1024px) {
     .hero-content-h1 {
-      font-size: 2rem;
+      font-size: 60px;
     }
   
     .nav-menu a {
@@ -349,6 +341,38 @@
       border-radius: 50%;
       opacity: 0;
       transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    .textDev{
+      text-align: start;
+      margin: auto;
+    }
+    .imageShadow{
+      margin: auto;
+    }
+    .Section2Image{
+      max-width: 400px;
+      max-height: 400px;
+      padding: 20px;
+      margin: auto;
+    }
+    .ShapeBox{
+      height: 130px;
+      width: 100%;
+      border-radius: 100px 0 0 100px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 40px;
+      color: #000000; 
+      background: #ffffff;
+    }
+    .Page3{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
     }
   }
 
