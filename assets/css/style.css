@@ -34,7 +34,14 @@
     overflow: hidden;
   }
 
+.paddingX{
+  max-width: 80rem /* 1280px */;
+  /* padding: 0 2.5rem; */
+  padding-left:2.5rem ;
+  padding-right: ;
+  margin: auto;
 
+}
 
 .navbar {
   position: fixed;
@@ -171,96 +178,54 @@
     width: 20px;
   }
 
-  .learn-more {
-    
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+  .button {
+    display: flex;
     outline: none;
     border: 0;
-    vertical-align: middle;
-    text-decoration: none;
     background: black;
-    padding: 10px;
+    color: #fff;
+    padding: 10px 20px;
     border-radius: 40px;
-    font-size: inherit;
-    font-family: inherit;
-   }
-   
-   .learn-more {
-    width: 12rem;
-    height: auto;
-   }
-   
-   button.learn-more .circle {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: relative;
-    display: flex;
-    justify-content: end;
-    margin: 0;
-    width: 3rem;
-    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.4s ease;
+    cursor: pointer;
+  }
+  .buttonTop{
     background: #ffffff;
-    border-radius: 1.625rem;
-   }
-   
-   button.learn-more .circle .icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #000000;
-   }
-   
-   button.learn-more .circle .icon.arrow {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: black;
-   }
-   
-   button.learn-more .circle .icon.arrow::before {
-    position: absolute;
-    content: "";
-    top: -4px;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid #000000;
-    border-right: 0.125rem solid #000000;
-    transform: rotate(45deg);
-   }
-   
-   button.learn-more .button-text {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 11px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
-    color: #ffffff;
-    font-weight: 700;
-    line-height: 1.6;
-    text-align: center;
-    text-transform: uppercase;
-   }
-   
-   button:hover .circle {
-    width: 100%;
-   }
-   
-   button:hover .circle .icon.arrow {
-    background: #fff;
-    transform: translate(1rem, 0);
-   }
-   
-   button:hover .button-text {
+    color: #000;
+    display: flex;
+    outline: none;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.4s ease;
+    font-weight: 600;
+  }
+  
+  .buttonTop  svg {
+    transition: transform 0.3s ease;
     color: #000000;
-   }
+  }
+  .button  svg {
+    transition: transform 0.3s ease;
+  }
+  
+  .button:hover {
+    background: #1a1a1a;
+  }
+  
+  .button:hover svg {
+    transform: translateX(5px);
+  }
+  
+
+   
+
   
    .pattern{
     background: url('../images/section2/Pattern.png') no-repeat center center/cover;
@@ -301,16 +266,49 @@
   }
   .ShapeBox{
     height: 130px;
-    width: 100%;
     border-radius: 100px 0 0 100px;
     padding: 20px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     margin-top: 40px;
     color: #000000; 
     background: #ffffff;
   }
+  .Page4{
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .leftIcon{
+    width: 70px;
+    height: 70px;
+}
+.content{
+   width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pattern-sec5{
+    background: url('../images/section4/Grid4.svg') no-repeat center center/cover;
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    
+}
+
+.sec4-mainImage{
+    width: 100%;
+    height: 700px !important;
+    padding: 20px;
+    align-items: center;
+    position: relative;
+
+}
 /* ============Tablet View (Medium Devices: 768px to 1024px)================= */
 @media (max-width: 1024px) {
     .hero-content-h1 {
@@ -381,12 +379,16 @@
   /* ================Mobile View (Small Devices: under 768px) ==========================*/
   @media (max-width: 767px) {
     .Wheel{
-      width: 50px ;
-      height: 50px;
+      width: 40px ;
+      height: 40px;
     }
     .hero-padding{
       padding:  135px 10px;
     }
+    .leftIcon{
+      width: 40px;
+      height: 40px;
+  }
 
   }
   
@@ -397,8 +399,8 @@
       padding:  100px 0;
       overflow: hidden;
     }
-    .hero-content h1 {
-      font-size: 1.8rem;
+    .hero-content-h1 {
+      font-size: 28px;
     }
   
     .h2{
@@ -515,26 +517,58 @@
   @media (max-width: 768px) {
     .step {
       flex: 1 1 100%;
+      text-align: center;
     }
 
     .step-number {
       font-size: 13px;
+      text-align: center;
     }
 
     .step-title {
       font-size: 17px;
+      text-align: center;
     }
 
     .step-desc {
       font-size: 14px;
+      text-align: center;
+    margin: 0 auto;
+
     }
 
     .step::after {
       display: none;
+      text-align: center;
     }
 
     .step::before {
       top: -8px;
+      text-align: center;
+    }
+    .step::before {
+      content: '';
+      position: absolute; 
+      top: 0;
+      right: 50%;
+      transform: translateX(50%);
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      z-index: 2;
+      background:#000000;
+    }
+  
+    .step::after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 20%;
+      width: 100%;
+      height: 2px;
+      background-color: #000000;
+      z-index: 1;
+      transform: translateX(0%);
     }
   }
 

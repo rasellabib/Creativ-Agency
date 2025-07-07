@@ -353,3 +353,33 @@ gsap.to(".scramble2", {
         // markers:true,
     }
   });
+
+
+
+
+
+
+gsap.from( ".page5-toptext",{
+    x: 100,
+    opacity: 0,
+    duration: 1.5 ,
+    scrollTrigger: {
+        trigger: "#page5",
+        scroller: "body",
+        start: "top 60%",
+        toggleActions: "play none none reverse",
+        // markers:true,
+    }
+})
+gsap.from( ".step-section",{
+    x: -100,
+    opacity: 0,
+    duration: 1.5 ,
+    scrollTrigger: {
+        trigger: "#page5",
+        scroller: "body",
+        start: "top 60%",
+        toggleActions: "play none none reverse",
+        // markers:true,
+    }
+})
